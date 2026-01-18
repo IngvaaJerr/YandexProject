@@ -1,6 +1,8 @@
 import data
 import post_and_get_requests
 
+#автотест проверки, включающий в себя создание заказа и запрос информации о нём по track, 
+# а также проверка статуса
 def test_track_search():
     post_response = post_and_get_requests.post_new_order(data.order_body)
     get_response = post_and_get_requests.get_order_track()
